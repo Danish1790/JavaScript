@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #head-input{
+    width:60rem !important;
+    height:5rem;
+}
+#detail-input{
+    width:1rem !important;
+    height:10rem !important;
+} */
+
+.card-body{
+    /* width:7rem !important; */
+    height:10rem !important;
+}
+.card, .card-body {
+    margin:0;
+}
+
+.dbtn{
+    position: absolute;
+    right:20px !important;
+    bottom:30px !important;
+}
+#card-column{
+    margin-bottom:30px !important;
+    /* margin-right:2px !important; */
+}
