@@ -1,0 +1,469 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+li{list-style:none;}
+p{
+    font-weight:400;
+    line-height: 1.6;
+    font-size:0.9rem;
+    color:rgb(92, 89, 89);
+}
+#togle-btn{
+    color:white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('./images/header.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    clip-path:polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%,0 0);
+    position: relative;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left:0;
+    right:0;
+    background:linear-gradient(to right, #ea25fc 0%, #35c8f5 0%, #7f16f6 100%);
+    opacity:0.3;
+    z-index:-1;
+}
+
+.navbar::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left:0;
+    right:0;
+    background:linear-gradient(to right, #991e20 0%, #f5195b 0%, #f616c9 100%);
+    opacity:0.3;
+    z-index:-1;
+}
+.nav-item a {
+    color:white !important;
+    font-weight:bold;
+}
+
+.header-section{
+    width:100%;
+    height:inherit;
+    text-align:center;
+    color:white;
+    position: relative;
+}
+.center-div{
+    position: absolute;
+    width: 100%;
+    height:auto;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+.header-buttons a{
+    border:2px solid white;
+    border-radius:100px;
+    margin:0 5px;
+    padding:12px 19px;
+    text-decoration:none;
+    font-weight:400;
+    font-size: 1rem;
+    line-height:1.4;
+    color:white;
+}
+.header-buttons a:hover{
+    background-color:white;
+    box-shadow:0 2px 20px 0  rgba(0, 0, 0, 0.3)
+}
+.center-div p{
+    color:white !important;
+    font-size:1.3rem;
+    padding:10px 0 20px 0;
+}
+/* ---------------------------------------------------------------------------Header closes here */
+
+
+/* -------------------------------------------------------------------Extra divs start */
+
+
+.header-extra-div{
+    margin:100px 0px;
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+.extra-divs{
+    background:#ffffff;
+    border:medium none;
+    padding:50px !important;
+    border-radius:3px;
+    transition:0.4s;
+}
+.extra-divs:hover{
+    box-shadow:0 2px 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+h2{
+    font-weight: bold;
+    line-height:1.1;
+    font-size:1.2rem;
+    padding:20px 0  15px 0;
+    word-spacing:4px;
+}
+.icons{
+    color:rgb(8, 166, 201);
+}
+
+/* -----------------------------------------------------------------three Extra divs end here */
+
+
+/* -----------------------------------------------Offers and services start */
+.headings{
+    margin-bottom:50px !important;
+}
+.headings h2{
+    font-size: 1.5rem;
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+.offers-section{
+    background:rgb(244, 252, 250);
+    padding:50px;
+}
+.names h3{
+    color:rgba(0, 0, 0);
+    font-size:0.9rem;
+    text-transform: capitalize;
+    font-weight:bold;
+}
+
+.offers h3 {
+    font-size:0.9rem;
+    font-weight:bold;
+    line-height:1.1;
+    word-spacing:4px;
+    margin:20px 0 15px 0;
+}
+
+.service-icons-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    margin:25px !important;
+}
+.icons{
+    color:rgb(20, 220, 255);
+}
+/* -------------------------------------offers end here */
+
+.projects-info{
+    margin:100px 0;
+}
+.projects-info h1{
+    font-size:2rem;
+    text-align: center;
+}
+
+/* -----------------------------pricing start here */
+
+.pricing{
+    width: 100%;
+    height:100vh;
+    padding:50px;
+    /* margin:20px 0px !important; */
+    position: relative;
+}
+
+.pricing::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left:0;
+    right:0;
+    background:linear-gradient( 165deg, rgb(94, 181, 253) 55%, #ffffff 0%);
+    /* opacity:0.3; */
+    z-index:-1;
+}
+
+.money{
+    font-size: 40px;
+    line-height: 1.1;
+    color:rgb(0, 0, 0);
+}
+.card{
+    transition: 0.4s ease;
+}
+.card-header{
+    font-size:1.3rem;
+    font-weight:bold;
+    padding:25px 9px !important;
+    background: white !important;
+}
+.card-body{
+    padding:25px 0px !important;
+
+}
+.card-body li{
+    font-size:15px;
+    margin:15px 0px;
+    font-weight:400;
+    line-height:1.6;
+
+}
+.card-footer{
+    background: white !important;
+    padding:30px 0 !important;
+}
+.card-footer a{
+    border:2px solid rgb(0, 0, 0);
+    border-radius:100px;
+    background:rgb(252, 252, 252);
+    margin:0 5px;
+    padding:12px 19px;
+    text-decoration:none;
+    font-weight:400;
+    font-size: 1rem;
+    line-height:1.4;
+    color:rgb(21, 1, 1);
+}
+
+.card-footer a:hover{
+    background-color:rgb(83, 198, 240);
+    box-shadow:0 0 20px 0  rgba(67, 92, 89, 0.3);
+    color:white;
+}
+.card:hover{
+    transform:translateY(-20px);
+    box-shadow:(0 0 20px 0 rgba(0, 0, 0,0.3))
+}
+.card:hover .card-footer a{
+    background-color:rgb(83, 198, 240);
+    box-shadow:0 0 20px 0  rgba(67, 92, 89, 0.3);
+    color:white;
+}
+.card:hover .card-header{
+    color:rgb(83, 198, 240);
+}
+.card:hover .card-body li span{
+    color:rgb(83, 198, 240);
+}
+
+/* --------------------------------------------------------------pricing ends here */
+
+
+/* ---------------------------------------------------------our happy clients start here */
+
+
+.clients{
+    width:100%;
+    height:auto;
+    padding:80px 0;
+}
+
+.box{
+    text-align: center;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    box-shadow:0 5px 20px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in;
+}
+
+.box:hover p{
+    color:rgb(0, 0, 0);
+
+}
+.carousel-indicators{
+    position:absolute;
+    right:0;
+    bottom:-60px !important;
+}
+.carousel-indicators button{
+    background-color: #16c9f6 !important;
+}
+
+.box a{
+    position: relative;
+}
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    margin-top:20px;
+}
+.box a::after{
+    content:"\f10d";
+    font-family:FontAwesome;
+    width: 40px;
+    height: 40px;
+    background-color: linear-gradient(to right,#16c9f6 0%,#1e6e99 0%,#19d4f5 100%);
+    border-radius:50%;
+    color:white;
+    position: absolute;
+    top:120%;
+    left:70%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.box h1{
+    font-size:22px !important;
+    font-weight:600;
+    color:black;
+    margin-bottom: 10px;
+
+}
+.box h2{
+    font-size:15px !important;
+    font-weight:400;
+    color:black;
+    margin-bottom: 20px;
+
+}
+
+
+/* ---------------------------------------------------------our happy clients ends here */
+
+
+
+/* -------------------------------------------------------------------Contact start here */
+
+
+.contact{
+    /* margin:80px 0;  */
+    padding:80px 0;
+    width:100%;
+    height:100vh;
+    position:relative;
+} 
+.contact:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:linear-gradient(330deg,#16c9f6 55%,#fff 0%);
+    z-index: -1;
+}
+.btn{
+    border:2px solid rgb(0, 0, 0);
+    border-radius:100px;
+    margin:0 5px;
+    padding:12px 19px;
+    text-decoration:none;
+    font-weight:400;
+    font-size: 1rem;
+    line-height:1.4;
+    color:white;
+    outline: none;
+    /* background: transparent; */
+}
+/* -------------------------------------------------------------------Contact end here */
+
+
+/* -----------------------------------------------------Subscribe starts here */
+
+.subscribe{
+    width:100%;
+    height:auto;
+    margin:80px 0;
+}
+.subscribe-input{
+    border-radius:100px 0 0 100px !important;
+    min-width: 150px;
+    min-height: 45px;
+}
+.input-group-text{
+    color:white !important;
+    background: #19d4f5 !important;
+    border-radius:0 100px 100px 0 !important;
+    min-width: 120px;
+    min-height:40px;
+}
+
+/* -----------------------------------------------------Subscribe ends here */
+
+
+
+/* ----------------------------------------Footer starts */
+
+.footer-section{
+    width:100%;
+    height:auto;
+    padding:70px 0 20px 0;
+    background:rgb(16, 206, 248);
+    position: relative;
+}
+
+.footer-section p{
+    color:rgb(255, 255, 255);
+}
+.footer-section li a{
+    font-size:0.9rem;
+    line-height:1.6;
+    font-weight:400;
+    color:#fff;
+    text-transform: capitalize;
+}
+
+.footer-section h3{
+    text-transform:uppercase;
+    font-weight: bold;
+    padding-bottom: 25px;
+    font-size:1.2rem !important;
+    /* box-shadow:0 0 1px 0 rgba(0, 0, 0, 0.3); */
+}
+/* ----------------------------------------Footer ends */
+
+
+
+
+
+
+
+
+
+/* ------------------------media queries */
+@media(max-width: 768px){
+    .nav-item{
+        text-align: center !important;
+    }
+
+    .pricing{
+        height: auto;
+        margin-top: 50px;
+    }
+    .clients{
+        height: auto;
+        /* margin:20px 0; */
+    }
+}
+@media(min-width: 769px){
+    .nav-item{
+        text-align: center !important;
+    }
+
+    .pricing{
+        height: auto;
+        margin-top: 50px;
+    }
+    .clients{
+        height: auto;
+        /* margin:20px 0; */
+    }
+}
