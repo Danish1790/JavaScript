@@ -1,0 +1,400 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar-brand,.nav-link{
+    color:rgb(255, 255, 255) !important;
+    font-size:1rem;
+}
+.navbar-brand{
+    font-size:1rem;
+    font-weight:bold;
+    color: white;
+}
+
+#header{
+    color:white;
+    width:100%;
+    height:100vh;
+    background:url('header.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+.h-buttons{
+    width:10rem !important;
+    font-weight:600 !important;
+    border: 2px solid rgb(245, 245, 245) !important;
+    margin:2px 4px !important;
+
+}
+.hb1{
+    background: linear-gradient(to right, #c21500, #ffc500) !important;
+}
+.hb1:hover{
+    background-color: yellow !important;
+}
+.hb2{
+    background: linear-gradient(to right, #fc354c, #0abfbc) !important;
+    color: white;
+}
+.hb2:hover{
+    background-color: aqua;
+}
+
+
+
+/* ============================================header ends here */
+
+
+
+/* ======================================zippy starts here */
+
+#zippy{
+    margin: 60px 180px 400px 180px;
+    height: 60vh;
+}
+
+#zippy-heading{
+    font-size:3rem;
+    text-align:center;
+}
+#umbrella{
+    font-size:10rem;
+}
+.umbrella-div{
+    padding-right:20px !important;
+}
+
+
+
+.zipy-div-icons{
+    /* border:1px solid red; */
+    border-radius:58px;
+    padding:10px;
+    font-size:3rem;
+    background-color: blueviolet;
+    color: white;
+}
+/* ======================================zippy ends here */
+
+
+
+/* ==================================================project starts here */
+
+.projects{
+    margin-top:400px !important;
+    height:100vh !important;
+    width:100%;
+}
+.card-img-top{
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.project-cols{
+    margin-top:10px !important;
+}
+
+
+/* ==================================================project ends here */
+
+/* ============================================================pricing starts here */
+
+#pricing{
+    margin: 60px 180px 40px 180px;
+    height: 60vh;
+}
+.pricing-head{
+    margin:50px 0 !important;
+}
+.pricing-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pricing-cols{
+    margin:12px 2px !important;
+}
+.pricing-ul{
+    list-style: none;
+}
+/* ============================================================pricing ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================================    medai queries  */
+
+
+@media(max-width:1440px){
+    #header{
+        color:rgb(255, 255, 255);
+        height:100vh;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #header-section{
+        margin-top:100px !important;
+    }
+    .umbrella-div{
+        padding:0 0 0 0 !important;
+    }
+    #umbrella{
+        font-size:10rem;
+    }
+    #pricing{
+        margin: 60px 140px 40px 140px;
+        height: auto;
+    }
+}
+@media(max-width:1024px){
+    #header{
+        color:rgb(253, 253, 253);
+        height:100vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+    }
+    .umbrella-div{
+        padding:0 30px 0 0 !important;
+    }
+    #umbrella{
+        font-size:8rem;
+    }
+    #zippy{
+        color: rgb(255, 255, 255);
+        margin: 20px auto 80px auto !important;
+        padding:0;
+        height:auto;
+    }
+    .projects{
+        /* margin-top:400px !important; */
+        padding-top:0px !important;
+        height:auto !important;
+        /* width:100%; */
+    }
+}
+
+
+
+
+@media(max-width:930px){
+    #header{
+        color:rgb(255, 251, 251);
+        height:100vh;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #header-section{
+        /* margin-top:30px !important; */
+        padding-top:35px !important;
+    }
+    #zippy{
+        color: rgb(255, 255, 255);
+        margin: 20px auto 100px auto !important;
+        /* padding:0 !important; */
+        height:auto;
+    }
+    .umbrella-div{
+        padding:0 auto;
+    }
+    #umbrella{
+        font-size:10rem;
+    }
+}
+@media(max-width:768px){
+    #zippy{
+        color: rgb(255, 255, 255);
+        margin: 20px auto 100px auto !important;
+        /* padding:0; */
+        height: auto;
+    }
+    .projects{
+        /* margin-top:400px !important; */
+        padding-top:900px !important;
+        height:auto !important;
+        width:100%;
+    }
+    .pro-row{
+        display: flex !important;
+        flex-direction:column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        
+    }
+    .project-cols{
+        width:30rem !important;
+        margin:15px auto !important;
+        text-align: center;
+        align-items: center;
+    }
+}
+@media(max-width:575px){
+    #header{
+        color:rgb(255, 255, 255);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #header-section{
+        margin:0;
+        padding-top:10px !important;
+        text-align: center;
+        align-items: center;
+    }
+    .headings h1{
+        margin:10px 0px !important;
+    }
+    .headings p{
+        margin:10px 0px !important;
+    }
+    #zippy{
+        color: crimson;
+        margin: 20px auto 50px auto !important;
+        /* padding:0; */
+        height: auto;
+    }
+    .projects{
+        /* margin-top:400px !important; */
+        padding-top:400px !important;
+        height:auto !important;
+        width:100%;
+    }
+    .pro-row{
+        display: flex !important;
+        flex-direction:column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        
+    }
+    .project-cols{
+        width:30rem !important;
+        margin:15px auto !important;
+        text-align: center;
+        align-items: center;
+    }
+    .zippy-row1{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    .above-umbrella{
+        width:20rem !important;
+    }
+    .umbrella-div{
+        padding:0 auto;
+        display:inline-block;
+        margin:0 !important;
+        padding:0 !important;
+        width:10rem !important;
+    }
+    #umbrella{
+        font-size:10rem;
+    }
+}
+@media(max-width:485px){
+    .zippy-row1{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    .above-umbrella{
+        width:14.5rem !important;
+    }
+    .umbrella-div{
+        padding:0 auto;
+        display:inline-block;
+        margin:0 !important;
+        padding:0 !important;
+        width:5rem !important;
+    }
+    #umbrella{
+        font-size:10rem;
+    }
+
+}
+@media(max-width:409px){
+    .zippy-row1{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    .above-umbrella{
+        width:11rem !important;
+    }
+    .umbrella-div{
+        padding:0 auto;
+        display:inline-block;
+        margin:0 !important;
+        padding:0 !important;
+        width:5rem !important;
+    }
+    #umbrella{
+        font-size:10rem;
+    }
+}
+
+@media(max-width:400px){
+    #header{
+        margin:0;
+        padding-top:5px !important;
+        color:rgb(246, 246, 246);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .headings h1{
+        margin:10px 0px !important;
+    }
+    .headings p{
+        margin:10px 0px !important;
+    }
+    .zippy-row1{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        justify-content:center;
+        align-items: center;
+    }
+    .above-umbrella{
+        width:100% !important;
+        text-align:center;
+        margin:10px 0 !important;
+    }
+    .umbrella-div{
+        padding:0 auto;
+        display:inline-block;
+        margin:5px 0 !important;
+        padding:0 !important;
+        width:100% !important;
+        text-align: center;
+    }
+    #umbrella{
+        font-size:5.5rem;
+    }
+}
+
+@media(max-width:342px){
+    #header{
+        margin:0;
+        padding-top:0px !important;
+        color:rgb(255, 255, 255);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #header-section{
+        margin-top:auto 0px !important;
+        padding: 0 !important;
+    }
+}
