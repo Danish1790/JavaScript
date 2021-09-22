@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:rgb(127, 30, 238);
+}
+
+#main{
+    width:100%;
+    height:100vh;
+    display:none;
+}
+#start{
+    /* background-color:rgb(147, 193, 236); */
+    width:30rem;
+    height:10rem;
+    margin:200px auto 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+#start-btn{
+    background-color: white;
+    color: rgb(127, 30, 238);
+    padding:12px 18px;
+    font-size: 2rem;
+    border:2px solid rgb(47, 255, 5);
+    border-radius:30px;
+    width:15rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+#start-btn:hover{
+    background-color:rgb(172, 127, 243);
+    color:white;
+    border:2px solid white;
+}
+
+
+/* ================header */
+#header{
+    height: 14rem;
+    width:100%;
+    /* background-color:rgb(141, 80, 221); */
+    background-color:rgb(165, 80, 221);
+    border-bottom-left-radius: 10px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 84% 69%, 67% 88%, 34% 88%, 16% 69%, 0% 43%, 0 0);
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* position: absolute; */
+    /* overflow:visible; */
+}
+
+#count-div{
+    margin-bottom: 20px;
+}
+#count{
+    color:green;
+
+}
+
+#next{
+    /* margin-top: 50px; */
+    position: absolute;
+    right: 14px;
+    bottom:18px;
+    width: 8rem;
+    height: 3rem;
+    padding: 0px 5px;
+    background-color: rgb(210, 46, 243);
+    font-size: 1.2rem;
+    border-radius: 28px;
+    color: white;
+    border: 2px solid rgb(30, 229, 255);
+    cursor: pointer;
+}
+#next:hover{
+    background-color:white;
+    color:rgb(167, 27, 167);
+}
+#Questions-div{
+    background-color:green;
+    width:36rem;
+    height:18rem;
+    position:relative;
+    top:7rem;
+    left:24rem;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding:20px;
+}
+#q{
+    margin-bottom: 20px;
+}
+#footer{
+    background-color: white;
+    background-color: rgb(182, 141, 221);
+    width:100%;
+    height:13rem;
+    position:relative;
+    top:10rem;
+    /* margin-top:50px; */
+    padding:50px 100px;
+    display: grid;
+    grid-template-columns: 16rem 16rem;
+    grid-gap:10px;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+}
+.options{
+    width:16rem;
+    height:3rem;
+    border-radius: 20px;
+    background-color:white;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+
+#vehicle1{
+    background-color:violet;
+}
+
+#footer input{
+    /* float:left; */
+    position:relative;
+    /* left:0; */
+    right:8px;
+    margin-top:4px;
+    /* margin-left:8px; */
+}
+
+#results{
+    /* display:none; */
+    display:flex;
+    background-color: rgb(184, 143, 207);
+    width: 50rem;
+    height: 20rem;
+    margin-top: 0px;
+    position: absolute;
+    top: 116px;
+    left: 260px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    font-size: 1.5rem;
+    border-radius:20px;
+    color:rgb(51, 255, 0);
+}
